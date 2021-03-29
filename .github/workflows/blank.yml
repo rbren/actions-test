@@ -26,6 +26,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: echo "hello"
       - run: git status
+      - run: git merge-base HEAD main
       - run: echo "done"
 
       # Runs a single command using the runners shell
